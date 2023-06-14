@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../public/style/cargarVideo.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+        <title>Estudiante</title>
+    </head>
+    <body>
+        <main class="container">
+            <nav>
+                <div class="menu">
+                    <img src="../public/images/logo.png" alt="Logotipo de EdVisto">
+                    <button class="button1"><i class="ti ti-home"></i>Inicio</button>
+                    <button class="button1"><i class="ti ti-briefcase"></i>Proyectos</button>
+                    <button class="button2" type="button" value="perfil"><i class="ti ti-user-circle" width: 128px; stroke-width: 2.0px;></i>Perfil de Usuario</button>
+                    <div class="config">
+                        <button class="button3" type="button" value="cerrarSesion" id="btnCerrarSesion"><i class="ti ti-logout"></i>Cerrar sesion</button>
+                        <button class="button4" type="button" value="idioma"><i class="ti ti-language"></i>Idioma</button>
+                    </div>
+                </div>
+            </nav>
+            <form class="formulario" id="formulario">
+                <div class="formulario__grupo" id="grupo__title">
+                    <div class="formulario__grupo-input" id="atras__grupo-imput">
+                        <buttonAtras class="buttonAtras"><i class="ti ti-arrow-left" id="btnAtras"></i></buttonAtras>
+                        <input type="text" class="formulario__input" name="title" id="title" placeholder="Titulo del Proyecto" maxlength="89">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El Titulo debe tener de 1 a 90 dígitos y solo puede contener letras, números, espacios y caracteres.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__video">
+                    <label for="youtube-link" class="formulario__label">Link Video:</label>
+                    <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="text" id="youtube-link" name="youtube-link" placeholder="Ingresa el enlace de YouTube">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El link de YouTube no deberia estar vacio.</p>
+                    <div id="video-container">
+                        <img class="imagen-video" src="../public/images/Vector.jpg">
+                    </div>
+                    <button onclick="agregarVideo()" class="formulario__btn" type="button" id="play-button">Validar Video</button>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__description">
+                    <label for="description" class="formulario__label">Descripción</label>
+                    <div class="formulario__grupo-input">
+                        <input class="formulario__input" type="text" id="description" name="description" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." maxlength="249">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">La descripción debe tener de 1 a 250 dígitos y solo puede contener números, letras y guion bajo.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__lider">
+                    <label for="lider" class="formulario__label">Lider del Proyecto</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="lider" id="lider" placeholder="John Doe" maxlength="99">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El Nombre del líder de Proyecto tiene que ser de 4 a 100 dígitos y solo puede contener letras.</p>
+                </div>
+
+                <div class="formulario__grupo" id="grupo__correo">
+                    <label for="correo" class="formulario__label">Correo Electrónico</label>
+                    <div class="formulario__grupo-input">
+                        <input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+                        <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                    </div>
+                    <p class="formulario__input-error">El correo solo puede contener letras, números, puntos, guiones y guion bajo.</p>
+                </div>
+
+                <div class="formulario__mensaje" id="formulario__mensaje">
+                    <p>
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <b>Error:</b>
+                        Por favor rellena el formulario correctamente.
+                    </p>
+                </div>
+
+                <div class="formulario__grupo formulario__grupo-btn-enviar">
+                    <button type="submit" class="formulario__btn" id="guardar-btn">Guardar</button>
+                    <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <p class="footer">&copy; EdVisto 2024</p>
+        </footer>
+        <script src="../script/formulario.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    </body>
+</html>

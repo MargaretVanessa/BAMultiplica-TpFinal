@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../public/style/docente.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.min.css" rel="stylesheet">
+        <title>Docente</title>
+    </head>
+    <body>
+        <main class="container">
+            <nav>
+                <div class="menu">
+                    <img src="../public/images/logo.png" alt="Logotipo de EdVisto">
+                    <button class="button1"><i class="ti ti-home"></i>Inicio</button>
+                    <button class="button1"><i class="ti ti-briefcase"></i>Proyectos</button>
+                    <button class="button2" type="button" value="perfil"><i class="ti ti-user-circle" width: 128px; stroke-width: 2.0px;></i>Perfil de Usuario</button>
+                    <div class="config">
+                        <button class="button3" type="button" id="btnCerrarSesion" value="cerrarSesion"><i class="ti ti-logout"></i>Cerrar sesion</button>
+                        <button class="button4" type="button" value="idioma"><i class="ti ti-language" id="selectorIdioma"></i>Idioma</button>
+                    </div>
+                </div>
+            </nav>
+            <form class="formulario" id="formulario">        
+                    <label class="titulo">PROYECTOS</label>
+                    <div class="filtro"><i class="fa-solid fa-bars"></i>
+                        <select id="filtrarProyectos">
+                            <option value="todos">Todos</option>
+                            <option value="proyecto1">Lider: Laura Lee</option>
+                            <option value="proyecto2">Lider: Luisa Perez</option>
+                            <option value="proyecto3">Lider: Martin Garcia</option>
+                        </select>
+                    </div>                    
+                    <div class="container1">
+                        <div class="box" data-proyecto="proyecto1">  
+                                <div class="label-container">
+                                    <label class="subtitulo">EL SOL</label>
+                                </div>
+                                <div class="sub-box">
+                                    <div id="video-container">
+                                        <img class="imagen-video" src="../public/images/Vector.jpg">
+                                    </div>
+                                    <div class="descripcion">
+                                        <p>Proyecto: El sol</p>
+                                        <p>Materia: Ciencias </p> 
+                                        <p>Lider: Laura Lee </p> 
+                                        <p>Descripción:es una estrella que forma parte central del sistema solar, dentro del cual se encuentra la tierra.</p>      
+                                    </div>
+                                </div>
+                                <button id="evaluacion1" type="submit" class="formulario__btn">Evaluación</button>
+                        </div>
+
+                        <div class="box" data-proyecto="proyecto2">
+                            <div class="label-container">
+                                <label class="subtitulo">EL ÁTOMO</label>
+                            </div>
+                            <div class="sub-box">
+                                <div id="video-container">
+                                     <img class="imagen-video" src="../public/images/Vector.jpg">
+                                </div>
+                                <div class="descripcion">
+                                    <p>Proyecto: El Átomo</p>
+                                    <p>Materia: Ciencias </p> 
+                                    <p>Lider: Luisa Perez</p> 
+                                    <p>Descripción: Parte más pequeña de una sustancia que no se puede descomponer químicamente.</p>   
+                                </div>
+                            </div>
+                            <button id="evaluacion2" type="submit" class="formulario__btn">Evaluación</button>
+                        </div>
+                        
+                        <div class="box" data-proyecto="proyecto3">
+                            <div class="label-container">
+                                <label class="subtitulo">La Luna</label>
+                            </div>
+                            <div class="sub-box">
+                                <div id="video-container">
+                                     <img class="imagen-video" src="../public/images/Vector.jpg">
+                                </div>
+                                <div class="descripcion">
+                                    <p>Proyecto: La Luna</p>
+                                    <p>Materia: Ciencias</p> 
+                                    <p>Lider: Martin Garcia</p> 
+                                    <p>Descripción:es el único satélite natural de la Tierra.</p>   
+                                </div> 
+                            </div>
+                            <button id="evaluacion3" type="submit" class="formulario__btn">Evaluación</button>
+                        </div>
+            </form>
+        </main>
+        <footer>
+            <p class="footer">&copy; EdVisto 2024</p>
+        </footer>
+        <script src="../script/filtro.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
+    </body>
+</html>

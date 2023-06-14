@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../public/style/proyectos.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>Docente</title>
+    </head>
+    <body>
+        <main class="container">
+            <nav>
+                <div class="menu">
+                    <img src="../public/images/logo.png" alt="Logotipo de EdVisto">
+                    <button class="button1"><i class="ti ti-home"></i>Inicio</button>
+                    <button class="button1"><i class="ti ti-briefcase"></i>Proyectos</button>
+                    <button class="button2" type="button" value="perfil"><i class="ti ti-user-circle"  width: 128px; stroke-width: 2.0px;></i>Perfil de Usuario</button>
+                    <div class="config">
+                        <button class="button3" type="button" value="cerrarSesion" id="btnCerrarSesion"><i class="ti ti-logout"></i>Cerrar sesion</button>
+                        <button class="button4" type="button" value="idioma"><i class="ti ti-language"></i>Idioma</button>
+                    </div>
+                </div>
+            </nav>
+
+            <form class="formulario" id="formulario">        
+                    <label class="titulo">PROYECTOS</label>   
+                    <div class="container1">
+                        <button type="submit" class="formulario__btnCargar" id="btnCargar">Cargar </button>
+                        <div class="box" data-proyecto="proyecto1">  
+                            <div class="label-container">
+                                <label class="subtitulo">EL SOL</label>
+                                <button type="submit" class="formulario__btn" id="btnResultado">Resultados</button>
+                            </div>  
+                        </div>
+                        
+                        <div class="box" data-proyecto="proyecto2">
+                            <div class="label-container">
+                                <label class="subtitulo">EL ÁTOMO</label>
+                                <button type="submit" class="formulario__btn" id="btnResultado">Resultados</button>
+                            </div>
+                        </div>
+                    </div>
+            </form>
+        </main>
+        <footer>
+            <p class="footer">&copy; EdVisto 2024</p>
+        </footer>
+        <script src="../script/cargar.js"></script>
+    </body>
+</html>

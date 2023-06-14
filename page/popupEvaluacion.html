@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../public/style/popupevaluacion.css">
+        <title>Evaluación</title>
+    </head>
+    <body>
+        <h2>EVALUACIÓN</h2>
+        <main>
+            
+            <div class="menu"> 
+                <div class="PensamientoCritico">
+                    <label>Pensamiento Critico</label>
+                    <div class="Lista1">
+                        <ul id="lista1">
+                            <li><input type="checkbox" name="condiciones" value="1"/><p>Validez de la información</p></li>
+                            <li><input type="checkbox" name="condiciones" value="2"/><p>Análisis argumental</p></li>
+                            <li><input type="checkbox" name="condiciones" value="3"/><p>Razón y contraargumento</p></li>
+                            <li><input type="checkbox" name="condiciones" value="4"/><p>Conclusión</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Creatividad">
+                    <label>Creatividad</label>
+                    <div class="Lista2">
+                        <ul id="lista2">
+                            <li><input type="checkbox" name="condiciones" value="1"/><p>Fluidez</p></li>
+                            <li><input type="checkbox" name="condiciones" value="2"/><p>La flexibilidad</p></li>
+                            <li><input type="checkbox" name="condiciones" value="3"/><p>La elaboración</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Colaboración">
+                    <label>Colaboración</label>
+                    <div class="Lista3">
+                        <ul id="lista3">
+                            <li><input type="checkbox" name="condiciones" value="1"/><p>Planificar y tomar decisiones en grupo</p></li>
+                            <li><input type="checkbox" name="condiciones" value="2"/><p>Comunicar ideas</p></li>
+                            <li><input type="checkbox" name="condiciones" value="3"/><p>Comprender diferentes perspectivas</p></li>
+                            <li><input type="checkbox" name="condiciones" value="4"/><p>Elaborar trabajos de otro miembro del equipo</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="Comunicación">
+                    <label>Comunicación</label>
+                    <div class="Lista4">
+                        <ul id="lista4">
+                            <li><input type="checkbox" name="condiciones" value="1"/><p>Comunicación verbal</p></li>
+                            <li><input type="checkbox" name="condiciones" value="2"/><p>Comunicación no verbal</p></li>
+                            <li><input type="checkbox" name="condiciones" value="3"/><p>Comunicacion escrita</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="formulario__btn">Guardar</button>
+        </main>
+        <script src="../script/Guardar.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+</html>
