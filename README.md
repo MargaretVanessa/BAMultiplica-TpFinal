@@ -32,7 +32,7 @@ Estudiante: estudiante@gmail.com
 ## Deployment
 To deploy this project run
 
-https://intechmom.github.io/team-5-front/
+https://margaretvanessa.github.io/BAMultiplica-TpFinal/
 
 
 ## Authors
@@ -40,13 +40,5 @@ https://intechmom.github.io/team-5-front/
 - [@margaretvanessa](https://github.com/MargaretVanessa)
 
 ## Logo
-![Logo](C:\Users\mvmolina\OneDrive - Prisma Medios de Pago\Escritorio\Cursos\Curso Programacion BA Multiplica\TP final\TpFinal\BAMultiplica-TpFinal\public\images\logo.png)
+![Logo](https://github.com/MargaretVanessa/BAMultiplica-TpFinal/blob/main/public/images/logo.png)
 
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) #0a192f |
-| Example Color | ![#f8f8f8](https://via.placeholder.com/10/f8f8f8?text=+) #f8f8f8 |
-| Example Color | ![#00b48a](https://via.placeholder.com/10/00b48a?text=+) #00b48a |
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
